@@ -1,0 +1,103 @@
+@use './variables';
+
+.card {
+  width: 200px;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  &__image {
+    width: 160px;
+    height: 206px;
+    display: block;
+    box-sizing: border-box;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    margin-inline: auto;
+  }
+
+  &__title {
+    font-family: variables.$main-font-family;
+    color: variables.$main-accent;
+    font-size: 12px;
+    font-weight: 500;
+    padding-inline: 16px;
+    line-height: 18px;
+  }
+  &__code {
+    font-family: variables.$main-font-family;
+    font-size: 10px;
+    color: variables.$secondary-accent;
+    font-weight: 400;
+    padding-top: 4px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    line-height: 14px;
+  }
+
+  &__review {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 16px;
+  }
+
+  &__review-count {
+    font-family: variables.$main-font-family;
+    color: variables.$main-accent;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+
+  &__price {
+    font-family: variables.$main-font-family;
+    color: variables.$main-accent;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    padding-inline: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__price-label {
+    font-family: variables.$main-font-family;
+    color: variables.$secondary-accent;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  &__price-value {
+    font-family: variables.$main-font-family;
+    color: variables.$main-accent;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+
+  &__btn {
+    width: auto;
+    height: 40px;
+    display: flex;
+    margin: 0 16px 16px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: variables.$blue-accent;
+    font-family: variables.$main-font-family;
+    font-weight: 700;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 16px;
+  }
+
+  &__btn:hover {
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid variables.$blue-accent;
+    color: variables.$blue-accent;
+  }
+}
